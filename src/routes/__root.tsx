@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { AppShell } from "../components/layout/AppShell";
 
 function NotFoundComponent() {
   return (
@@ -77,11 +78,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Nimbus — AI Productivity Workspace" },
+      {
+        name: "description",
+        content:
+          "Nimbus is an AI productivity workspace with an intelligent task planner, research assistant, and chatbot to help you focus and ship.",
+      },
+      { name: "author", content: "Nimbus" },
+      { property: "og:title", content: "Nimbus — AI Productivity Workspace" },
+      {
+        property: "og:description",
+        content:
+          "Plan your day, research faster, and chat with an AI assistant — all in one clean, modern workspace.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -119,8 +128,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <AppShell>
+        <Outlet />
+      </AppShell>
     </QueryClientProvider>
   );
 }
