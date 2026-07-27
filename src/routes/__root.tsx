@@ -78,22 +78,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nimbus — AI Productivity Workspace" },
+      { title: "Dashboard — Nimbus AI Workspace" },
       {
         name: "description",
         content:
-          "Nimbus is an AI productivity workspace with an intelligent task planner, research assistant, and chatbot to help you focus and ship.",
+          "Your AI productivity dashboard: today's tasks, research summaries, chat activity, and quick actions.",
       },
       { name: "author", content: "Nimbus" },
-      { property: "og:title", content: "Nimbus — AI Productivity Workspace" },
+      { property: "og:title", content: "Dashboard — Nimbus AI Workspace" },
       {
         property: "og:description",
         content:
-          "Plan your day, research faster, and chat with an AI assistant — all in one clean, modern workspace.",
+          "Your AI productivity dashboard: today's tasks, research summaries, chat activity, and quick actions.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Dashboard — Nimbus AI Workspace" },
+      { name: "twitter:description", content: "Your AI productivity dashboard: today's tasks, research summaries, chat activity, and quick actions." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84564f01-b59d-4fb9-8bf3-4dab5487f204/id-preview-77873bd1--d5510a1b-ca81-4ea6-a589-761322e90f4e.lovable.app-1785152469375.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84564f01-b59d-4fb9-8bf3-4dab5487f204/id-preview-77873bd1--d5510a1b-ca81-4ea6-a589-761322e90f4e.lovable.app-1785152469375.png" },
     ],
     links: [
       {

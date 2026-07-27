@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Dashboard — Nimbus AI Workspace" },
       {
         property: "og:description",
-        content: "Track tasks, research, and AI conversations from one clean workspace.",
+        content: "Your AI productivity dashboard: today's tasks, research summaries, chat activity, and quick actions.",
       },
     ],
   }),
